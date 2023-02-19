@@ -18,6 +18,7 @@ def LoadAllCSVs():
     InputCharacterDataFromCSV()
     InputBaseStatsMatrixFromCSV()
     InputClassMatrixFromCSV()
+    InputVitalStatsMatrixFromCSV()
 
 def InputSpecifiedCSV(modulecsv, headers): #does not work yet, do not use
     modulecsv = read.csv(file = paste("data\\", Module, ".csv", sep = "", header = headers))
@@ -62,7 +63,7 @@ def InputClassListFromCSV():
     ClassList = read.csv(file = "data\\ClassList.csv", header = FALSE)
 
 def InputClassMatrixFromCSV():
-  ClassMatrix = read.csv(file = "data\\ClassMatrix.csv")
+    ClassMatrix = read.csv(file = "data\\ClassMatrix.csv")
 
 def InputComputedStatListFromCSV():
     ComputedStatList = read.csv(file = "data\\ComputedStatList.csv")
@@ -74,7 +75,10 @@ def InputSkillListFromCSV():
     SkillList = read.csv(file = "data\\SkillList.csv")
 
 def InputSkillMatrixFromCSV():
-      SkillMatrix = read.csv(file = "data\\SkillMatrix.csv")
+    SkillMatrix = read.csv(file = "data\\SkillMatrix.csv")
 
 def InputFeatListFromCSV():
     FeatList = read.csv(file = "data\\FeatList.csv", header = FALSE)
+
+def InputVitalStatsMatrixFromCSV():
+    VitalStatsMatrix = read.csv(file = "data\\VitalStatsMatrix.csv")
